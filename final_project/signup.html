@@ -1,0 +1,89 @@
+<?php
+session_start();
+?>
+
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!--        Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <!--jQuery library--> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--Latest compiled and minified JavaScript--> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body background="book.jpg">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="index1.php" class="navbar-brand"><strong><h4><center>Book Store</center></h4></strong></a>
+          <br/>
+    
+         </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right ">
+            <li class="active"><a ><strong><span class="glyphicon glyphicon-user"></span>Signup</strong></a></li>
+            <li><a data-toggle="modal" data-target="#myModal"><strong><span class="glyphicon glyphicon-log-in"></span> Login</strong></a></li>
+            <li><a href="about.php"><strong><span class="  glyphicon glyphicon-list-alt"></span> About Us</strong></a></li>
+            <li><a href="contact.php"><strong><span class="glyphicon glyphicon-phone-alt"></span> Contact Us</strong></a></li>
+          
+          </ul>
+      </div>
+
+      
+  </div>
+
+    </nav>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+<div class="container-fluid">
+            <div class="row">
+                    <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3">
+                        <h2 style="color:white">SIGN UP</h2>
+                        <form method="POST" action="user_registration_script.php">
+                    
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Name" name="name"  required = "true">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control"  placeholder="Email"  name="email" required = "true">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password" name="password" required = "true">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control"  placeholder="Contact" name="contact" required = "true">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control"  placeholder="City" name="city" required = "true">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control"  placeholder="Address" name="address" required = "true">
+                            </div><a href="boot.html">
+                            <button type="submit" name="submit" class="btn btn-primary">Submit</button></a>
+                        </form>
+                           <h4 style="color:white">Already have an Account?<a data-toggle="modal" data-target="#myModal">Login</a></h4>
+                    </div>
+                </div>
+            </div>
+
+<br/><br/><br/><br/><br/><br/>
+ <?php
+ require 'login_modal.php';
+ ?>
+    
+    
+</body>
+</html>
